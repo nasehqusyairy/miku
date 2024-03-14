@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIKU | Media Edukasi Lingkungan - Daftar</title>
+  <link rel="stylesheet" href="./assets/css/main.min.css">
+  <link rel="shortcut icon" href="./assets/img/miku.png">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#9bac72">
+
+  <style>
+    @media screen and (min-width: 768px) {
+      body {
+        background-color: var(--bs-primary);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <main class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card rounded-4 border-0">
+          <div class="card-body">
+            <div class="d-flex mb-3 justify-content-center align-items-center border-bottom">
+              <img src="./assets/img/miku.png" alt="" class="mb-3" height="100">
+              <div>
+                <h1 class="text-primary text-pacifico m-0">MIKU</h1>
+                <p class="text-muted">Media Edukasi Lingkungan</p>
+              </div>
+            </div>
+            <form action="/auth" method="post">
+              <div class="form-floating mb-3">
+                <input type="email" name="email" id="email" class="form-control" placeholder="">
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" name="password" id="password" class="form-control" placeholder="">
+                <label for="password">Kata Sandi</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password_verify" name="password_verify" id="password_verify" class="form-control"
+                  placeholder="">
+                <label for="password_verify">Konfirmasi Sandi</label>
+              </div>
+              <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-primary" type="button">Kirim</button>
+              </div>
+              <div class="text-center">Sudah memiliki akun? <a href="./login.html">Masuk</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
